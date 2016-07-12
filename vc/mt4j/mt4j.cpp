@@ -262,6 +262,11 @@ jmethodID findProperyMethod(int jvmCtx, char * prefix, char * propertyName, char
 }
 // +++++++++++++++++++++ PUBLIC API starts here ++++++++++++++++++++
 
+//MT4J_API int __stdcall hello(int a) {
+//	//printf("hello World from visual studio I think");
+//	return a*a;
+//}
+
 MT4J_API int __stdcall newInstance(char * className)
 {
 	int jvmCtx=-1;

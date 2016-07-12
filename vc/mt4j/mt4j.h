@@ -10,6 +10,8 @@
 #define MT4J_API __declspec(dllimport)
 #endif
 
+//MT4J_API int __stdcall hello(char * name);
+
 MT4J_API int __stdcall newInstance(char * className);
 MT4J_API int __stdcall processTick(int jvmCtx, double bid, double ask);
 MT4J_API void __stdcall addNewBar(int jvmCtx, double high, double low, double open, double close);
